@@ -12,12 +12,18 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { CommunityComponent } from './community/community.component';
 import { NewsComponent } from './news/news.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
+import { BoardCommentComponent } from './board-comment/board-comment.component';
+import { StaffComponent } from './staff/staff.component';
+//bootstrap NG
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 //constant to house all routes
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'about', component: AboutComponent}
+  {path: 'about', component: AboutComponent},
+  {path : 'community', component: CommunityComponent},
+  {path : 'news', component: NewsComponent},
+  {path : 'staff', component: StaffComponent}
 ];
 
 @NgModule({
@@ -30,12 +36,14 @@ const appRoutes: Routes = [
     HomeComponent,
     CommunityComponent,
     NewsComponent,
-    DropdownComponent
+    BoardCommentComponent,
+    StaffComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

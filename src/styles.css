@@ -44,3 +44,15 @@
 .card-info:hover{
 	background-color: #E9EBED !important;
 }
+.p10{
+	padding-top: 10px;
+}
+
+.label-hover:hover{
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+
+.m20{
+	margin: 20px;
+}
