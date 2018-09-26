@@ -13,8 +13,7 @@ export class StaffComponent implements OnInit {
   }
 
   showInfo(elementSelected:any){
-  	this.elementSelected = elementSelected;
-  	console.log(elementSelected);
+    this.elementSelected = elementSelected == this.elementSelected ? 'close' : elementSelected;
   }
 
   checkIfSelected(elementSelected:any){

@@ -51,8 +51,31 @@
 .label-hover:hover{
 	text-decoration: underline;
 	text-decoration-color: black;
+	cursor: pointer;
 }
 
 .m20{
 	margin: 20px;
+}
+
+.width-900{
+	width: 900px;
+}
+.nav-link-select:hover{
+	background-color: #ECECEC;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.center-text{
+	text-align: middle; 
+	margin: auto !important;
+}
+
+.mt-2em{
+	margin-top: 2em;
+}
+
+.margin-auto{
+	margin: auto !important;
 }

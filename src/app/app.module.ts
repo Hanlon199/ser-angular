@@ -16,6 +16,10 @@ import { BoardCommentComponent } from './board-comment/board-comment.component';
 import { StaffComponent } from './staff/staff.component';
 //bootstrap NG
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbdCarouselBasicComponent } from './ngbd-carousel-basic/ngbd-carousel-basic.component';
+import { NgBdDropdownBasicComponent } from './ng-bd-dropdown-basic/ng-bd-dropdown-basic.component';
+import { StudentsComponent } from './students/students.component';
+import { CardViewComponent } from './card-view/card-view.component';
 
 //constant to house all routes
 const appRoutes: Routes = [
@@ -23,7 +27,8 @@ const appRoutes: Routes = [
   {path: 'about', component: AboutComponent},
   {path : 'community', component: CommunityComponent},
   {path : 'news', component: NewsComponent},
-  {path : 'staff', component: StaffComponent}
+  {path : 'staff', component: StaffComponent},
+  {path : 'students', component: StudentsComponent}
 ];
 
 @NgModule({
@@ -37,7 +42,11 @@ const appRoutes: Routes = [
     CommunityComponent,
     NewsComponent,
     BoardCommentComponent,
-    StaffComponent
+    StaffComponent,
+    NgbdCarouselBasicComponent,
+    NgBdDropdownBasicComponent,
+    StudentsComponent,
+    CardViewComponent
   ],
   imports: [
     BrowserModule,

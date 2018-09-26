@@ -1,0 +1,56 @@
+<div class="container">
+	<div class="row">
+		<div class="margin-auto">
+			<h3 class="display-5 center-text">Students at U.A.</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="margin-auto">
+			<app-ngbd-carousel-basic carsouelType='2' width='800' height='350'></app-ngbd-carousel-basic>
+		</div>
+	</div>
+		
+	<div class="form-border mt-2em"></div>
+	<div class="row mt-2em">
+		<h3 class="display-5 center-text">The Big 3</h3>
+	</div>
+	<div class="row" style="margin-left: 15%;">
+		<app-card-view imageSrc="src/includes/img/mirio.jpg" header="Mirio Togata" comment="also known by his hero name Lemillion (ルミリオン Rumirion?), is a third-year student at U.A. High School and is part of The Big 3. Before Izuku Midoriya, Mirio was the top candidate for All Might's successor and inheritor of One For All."></app-card-view>
+		<app-card-view imageSrc="src/includes/img/tamaki.jpg" header="Tamaki Amajiki" comment="also known by his Hero name Suneater (サンイーター Sanītā?), is a third-year student at U.A. High and is part of The Big 3."></app-card-view>
+		<app-card-view imageSrc="src/includes/img/nejire.jpg" header="Nejire Hado" comment="also known by his Hero name Suneater (サンイーター Sanītā?), is a third-year student at U.A. High and is part of The Big 3."></app-card-view>
+	</div>
+
+	<div class="form-border"></div>
+	<div class="alert alert-info">Please <b>click on</b> a name to open or close detailed view</div>
+	<div class="row mt-2em" >
+		<h3 class="display-5 label-hover center-text"><a (click)="showElement('class1a')">Class 1A</a></h3>
+	</div>
+	<div class="row" style="margin-left: 3%" *ngIf="checkSelected('class1a')">
+		<app-card-view imageSrc="src/includes/img/izuku.jpg" header="Izuku Midoriya" comment="Though born without a Quirk, he manages to catch the attention of the legendary hero All Might due to his innate heroism and has since become his close pupil as well as a student at U.A. High School. All Might passed on his Quirk to Izuku, making Izuku the ninth owner of the Quirk One For All."></app-card-view>
+		<app-card-view imageSrc="src/includes/img/ochaco.jpg" header="Ochaco Uraraka" comment=" known by her Hero name Uravity, is a student of U.A.'s Class 1-A, training to become a Pro Hero. She is also one of the main protagonists of My Hero Academia."></app-card-view>
+		<app-card-view imageSrc="src/includes/img/shoto.jpg" header="Shoto Todoroki" comment="student who was accepted into U.A. High School through official recommendations to train to become a Pro Hero. He is one of the main protagonists of My Hero Academia."></app-card-view>
+		<app-card-view imageSrc="src/includes/img/tenya.jpg" header="Tenya Iida" comment="student of U.A. High School's Class 1-A and its class president. He is one of the main protagonists of My Hero Academia."></app-card-view>
+	</div>
+	<div class="row" style="margin-left: 3%" *ngIf="checkSelected('class1a')" >
+		<app-card-view imageSrc="src/includes/img/tsuyu.jpg" header="Tsuyu Asui" comment="known as the Rainy Season Hero: Froppy, is a major supporting character and a student at U.A. High School training to become a Pro Hero."></app-card-view>
+		<app-card-view imageSrc="src/includes/img/momo.jpg" header="Momo Yaoyorozu" comment="student at U.A. High School, training to become a Pro Hero. She is the Vice President of Class 1-A and got into U.A. through official recommendations."></app-card-view>
+		<app-card-view imageSrc="src/includes/img/denki.jpg" header="Denki Kaminari" comment="student at U.A. High School training to become a Pro Hero."></app-card-view>
+		<app-card-view imageSrc="src/includes/img/eijiro.jpg" header="Eijiro Kirishima" comment="known as the Sturdy Hero: 'Red Riot' (剛健ヒーロー 烈怒頼雄斗レッドライオット Gōken Hīrō Reddo Raiotto?) is a student at U.A. High School training to become a Pro Hero."></app-card-view>
+	</div>
+
+	<div class="form-border"></div>
+	<div class="row mt-2em">
+		<h3 class="display-5 label-hover center-text"><a (click)="showElement('class1b')">Class 1B</a></h3>
+	</div>
+	<div class="row" style="margin-left: 3%" *ngIf="checkSelected('class1b')">
+		<app-card-view imageSrc="src/includes/img/itsuka.jpg" header="Itsuka Kendo" comment="student at U.A. High School training to become a Pro Hero. She is the class representative of Class 1-B."></app-card-view>
+		<app-card-view imageSrc="src/includes/img/neito.jpg" header="Neito Monoma" comment="Neito is shown to be very intelligent, as he was able to see through Uraraka's true strategy during her fight against Bakugo, something many pro heroes present were unable to do."></app-card-view>
+		<app-card-view imageSrc="src/includes/img/yui.jpg" header="Yui Kodai" comment="Yui can make herself shrink to at least half of Bondo's size.[1] She can also make herself larger, as seen when she tries to scare off Shoto and Katsuki."></app-card-view>
+		<app-card-view imageSrc="src/includes/img/tetsutetsu.jpg" header="Tetsutetsu Tetsutetsu" comment="Tetsutetsu's Quirk allows him to turn his body into steel, which gives him a great defensive ability. "></app-card-view>
+	</div>
+
+
+	<div class="row mt-2em">
+		<tfoot class="center-text">Information is provided by <a href="http://bokunoheroacademia.wikia.com/wiki/My_Hero_Academia_Wiki" target="_blank">U.A. Wiki</a></tfoot>
+	</div>
+</div>
