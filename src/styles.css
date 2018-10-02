@@ -30,6 +30,10 @@
 .form-border{
 	border-bottom: 1px solid black !important;
 }
+.form-margin{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 .display-small{
 	line-height: 1.2.;
@@ -78,4 +82,7 @@
 
 .margin-auto{
 	margin: auto !important;
+}
+.navbar-hover:hover{
+	background-color: #EDEDED;
 }
