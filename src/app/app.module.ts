@@ -20,6 +20,9 @@ import { NgbdCarouselBasicComponent } from './ngbd-carousel-basic/ngbd-carousel-
 import { NgBdDropdownBasicComponent } from './ng-bd-dropdown-basic/ng-bd-dropdown-basic.component';
 import { StudentsComponent } from './students/students.component';
 import { CardViewComponent } from './card-view/card-view.component';
+import { ShopComponent } from './shop/shop.component';
+import { NgbDropdownCondensedComponent } from './ngb-dropdown-condensed/ngb-dropdown-condensed.component';
+import { SchoolComponent } from './school/school.component';
 
 //constant to house all routes
 const appRoutes: Routes = [
@@ -28,7 +31,8 @@ const appRoutes: Routes = [
   {path : 'community', component: CommunityComponent},
   {path : 'news', component: NewsComponent},
   {path : 'staff', component: StaffComponent},
-  {path : 'students', component: StudentsComponent}
+  {path : 'students', component: StudentsComponent},
+  {path : 'school', component: SchoolComponent}
 ];
 
 @NgModule({
@@ -46,7 +50,10 @@ const appRoutes: Routes = [
     NgbdCarouselBasicComponent,
     NgBdDropdownBasicComponent,
     StudentsComponent,
-    CardViewComponent
+    CardViewComponent,
+    ShopComponent,
+    NgbDropdownCondensedComponent,
+    SchoolComponent
   ],
   imports: [
     BrowserModule,

@@ -86,3 +86,39 @@
 .navbar-hover:hover{
 	background-color: #EDEDED;
 }
+
+.carousel-dimensions{
+	height: 50%;
+	width: 100%;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.jumbo-image{
+	background-image: url('src/includes/img/jumbotron.jpg') !important;
+	background-repeat: no-repeat;
+}
+
+.text-white{
+	color: white !important;
+}
+
+.font-heavy{
+	font-weight: 800;
+}
+
+@media only screen and (max-width: 800px) {
+	.full-nav{
+		display: none;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	 .small-nav{
+		display: none;
+	} 
+}
