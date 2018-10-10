@@ -23,6 +23,7 @@ import { CardViewComponent } from './card-view/card-view.component';
 import { ShopComponent } from './shop/shop.component';
 import { NgbDropdownCondensedComponent } from './ngb-dropdown-condensed/ngb-dropdown-condensed.component';
 import { SchoolComponent } from './school/school.component';
+import { AccordionBasicComponent } from './accordion-basic/accordion-basic.component';
 
 //constant to house all routes
 const appRoutes: Routes = [
@@ -53,7 +54,8 @@ const appRoutes: Routes = [
     CardViewComponent,
     ShopComponent,
     NgbDropdownCondensedComponent,
-    SchoolComponent
+    SchoolComponent,
+    AccordionBasicComponent
   ],
   imports: [
     BrowserModule,

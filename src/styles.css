@@ -122,3 +122,17 @@
 		display: none;
 	} 
 }
+
+#one {
+ font-family: monospace;
+}
+.one{
+ text-align: center;
+ border: 2px solid black;
+}
+.three {
+ background-color: yellow;
+}
+#two {
+ width: 50%;
+}

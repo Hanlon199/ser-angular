@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
-
-  constructor() { }
+	currentPath:string;
+  constructor() { 
+  	let temp = window.location.pathname.split('/') 
+  	this.currentPath = temp[1];
+  }
 
   ngOnInit() {
   }
