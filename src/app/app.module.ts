@@ -3,19 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 //import to use routes within application
 import { Routes, RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-import { CommunityComponent } from './community/community.component';
+import { CommunityComponent} from './community/community.component';
 import { NewsComponent } from './news/news.component';
 import { BoardCommentComponent } from './board-comment/board-comment.component';
 import { StaffComponent } from './staff/staff.component';
-//bootstrap NG
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdCarouselBasicComponent } from './ngbd-carousel-basic/ngbd-carousel-basic.component';
 import { NgBdDropdownBasicComponent } from './ng-bd-dropdown-basic/ng-bd-dropdown-basic.component';
 import { StudentsComponent } from './students/students.component';
@@ -24,6 +21,10 @@ import { ShopComponent } from './shop/shop.component';
 import { NgbDropdownCondensedComponent } from './ngb-dropdown-condensed/ngb-dropdown-condensed.component';
 import { SchoolComponent } from './school/school.component';
 import { AccordionBasicComponent } from './accordion-basic/accordion-basic.component';
+import { NgbdModalContent, NgbdModalComponent } from './message-board-modal/message-board-modal.component';
+//bootstrap NG
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbdDatepickerComponent } from './ngbd-datepicker/ngbd-datepicker.component';
 
 //constant to house all routes
 const appRoutes: Routes = [
@@ -55,8 +56,14 @@ const appRoutes: Routes = [
     ShopComponent,
     NgbDropdownCondensedComponent,
     SchoolComponent,
-    AccordionBasicComponent
+    AccordionBasicComponent,
+    NgbdModalContent,
+    NgbdModalComponent,
+    NgbdDatepickerComponent
   ],
+  // exports:[
+  //   MessageModalComponent
+  // ],
   imports: [
     BrowserModule,
     FormsModule,
