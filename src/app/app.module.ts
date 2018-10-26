@@ -24,8 +24,8 @@ import { AccordionBasicComponent } from './accordion-basic/accordion-basic.compo
 import { NgbdModalContent, NgbdModalComponent } from './message-board-modal/message-board-modal.component';
 //bootstrap NG
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Calendar } from './school-calendar/school-calendar.component';
 import { NgbdDatepickerComponent } from './ngbd-datepicker/ngbd-datepicker.component';
-
 //constant to house all routes
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -34,7 +34,8 @@ const appRoutes: Routes = [
   {path : 'news', component: NewsComponent},
   {path : 'staff', component: StaffComponent},
   {path : 'students', component: StudentsComponent},
-  {path : 'school', component: SchoolComponent}
+  {path : 'school', component: SchoolComponent},
+  {path : 'calendar', component: Calendar}
 ];
 
 @NgModule({
@@ -59,11 +60,9 @@ const appRoutes: Routes = [
     AccordionBasicComponent,
     NgbdModalContent,
     NgbdModalComponent,
-    NgbdDatepickerComponent
+    NgbdDatepickerComponent,
+    Calendar
   ],
-  // exports:[
-  //   MessageModalComponent
-  // ],
   imports: [
     BrowserModule,
     FormsModule,

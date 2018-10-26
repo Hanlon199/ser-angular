@@ -1,0 +1,17 @@
+/* Hide the start time & title from events */
+/deep/ .fc-time, /deep/ .fc-title {
+   display : none;
+}
+
+
+/* Sytle and color the events */
+/deep/ .calEvent {
+  border-radius: 500px;
+  height: 12px;
+  width: 10px;
+  float: right;
+} 
+
+#calendar{
+	height: 100% !important;
+}
