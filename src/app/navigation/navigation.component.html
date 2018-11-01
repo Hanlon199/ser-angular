@@ -27,13 +27,14 @@
         <li class="nav-item navbar-hover">
           <a [ngClass]="[currentPath == 'calendar'? 'active' : '']" class="nav-link" href="calendar">Calendar</a>
         </li>
-        <li class="nav-item navbar-hover">
-        </li>
+        <!-- <li class="nav-item navbar-hover"> -->
+          <!-- <a [ngClass]="[currentPath == 'contact'? 'active' : '']" class="nav-link" href="contact">Contact us</a> -->
+        <!-- </li> -->
       </ul>
     </div>
    
-    <a class="navbar-brand btn btn-light nav-link" href="settings">Settings</a>
-    <a class="navbar-brand banner-link btn btn-primary" target="_blank" href="http://bokunoheroacademia.wikia.com/wiki/My_Hero_Academia_Wiki">Wiki Source</a>
+    <a [ngClass]="[currentPath == 'contact'? 'active' : '']" class="white navbar-brand btn btn-primary nav-link" href="contact" style="color: white;">Contact us</a>
+    <a class="navbar-brand btn btn-light" target="_blank" href="http://bokunoheroacademia.wikia.com/wiki/My_Hero_Academia_Wiki">Wiki Source</a>
     <!-- <a class="navbar-brand banner-link btn btn-primary" href="settings"><i class="fa-arrow-down"></i></a> -->
   </nav>  
   </div>

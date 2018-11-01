@@ -19,7 +19,7 @@ import { StudentsComponent } from './students/students.component';
 import { CardViewComponent } from './card-view/card-view.component';
 import { ShopComponent } from './shop/shop.component';
 import { NgbDropdownCondensedComponent } from './ngb-dropdown-condensed/ngb-dropdown-condensed.component';
-import { SchoolComponent } from './school/school.component';
+import { SchoolComponent, ContactComponent } from './school/school.component';
 import { AccordionBasicComponent } from './accordion-basic/accordion-basic.component';
 import { NgbdModalContent, NgbdModalComponent } from './message-board-modal/message-board-modal.component';
 //bootstrap NG
@@ -35,7 +35,8 @@ const appRoutes: Routes = [
   {path : 'staff', component: StaffComponent},
   {path : 'students', component: StudentsComponent},
   {path : 'school', component: SchoolComponent},
-  {path : 'calendar', component: Calendar}
+  {path : 'calendar', component: Calendar},
+  {path : 'contact', component: ContactComponent}
 ];
 
 @NgModule({
@@ -57,6 +58,7 @@ const appRoutes: Routes = [
     ShopComponent,
     NgbDropdownCondensedComponent,
     SchoolComponent,
+    ContactComponent,
     AccordionBasicComponent,
     NgbdModalContent,
     NgbdModalComponent,

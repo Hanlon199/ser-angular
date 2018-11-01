@@ -1,0 +1,48 @@
+<div class="container container-border ">
+	<h3 class="display-4 form-border">Contact us</h3>
+	<form #myForm="ngForm" (ngSubmit)="newMessage(myForm.form)">
+		<div class="row">
+			<div class="margin-auto" [ngClass]="{'required': !myForm.form.valid}">
+				<label>Name: </label>
+				<input [(ngModel)]="name" class="form-control width-300 col-md-12" name="name" type="text" placeholder="Enter name..." required="true">
+			</div>
+		</div>
+		<div class="row">
+			<div class="margin-auto" [ngClass]="{'required': !myForm.form.valid}">
+				<label>Email: </label>
+				<input [(ngModel)]="email" class="form-control width-300 col-md-12" name="email" type="email" placeholder="Enter email..." required="true">
+			</div>
+		</div>
+		<div class="row">
+			<div class="margin-auto">
+				<input [(ngModel)]="interest" type="checkbox" name="interest" value="admission"> Admission <br/>
+				<input type="checkbox" name="interest" value="curriculum"> Curriculum <br/>
+				<input type="checkbox" name="interest" value="faculty"> Faculty <br/>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="margin-auto" [ngClass]="{'required': !myForm.form.valid}">
+				<label>Faculty</label>
+				<select [(ngModel)]="faculty" name="faculty" class="form-control width-300" required="true">
+					<option>Toshinori Yagi</option>
+					<option>Shota Aizawa</option>
+					<option>Nemuri Kayama</option>
+					<option>Hizashi Yamada</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="margin-auto" [ngClass]="{'required': !myForm.form.valid}">
+				<label>Message</label>
+				<textarea [(ngModel)]="message" class="form-control width-300" cols="5" rows="5" name="message" required placeholder="Type Message..." required="true"></textarea>
+			</div>
+		</div>
+	</form>
+	<div class="row">
+		<div class="margin-auto">
+    		<button class="btn btn-primary m10" [disabled]="!myForm.form.valid">submit</button>
+
+			<!-- <input type="submit" name="submit" value="Submit" class="btn btn-primary m10" [disabled]="!myForm.form.valid"> -->
+		</div>
+	</div>
+</div>

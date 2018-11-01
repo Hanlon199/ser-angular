@@ -71,9 +71,9 @@ export class Calendar implements OnInit {
       	events: this.eventlist,
       	eventRender: (event, element) => {
         	// this.log.push("Rendering Event");
-        	$(element).html('<button type="button" class="btn btn-outline-secondary mr-2" placement="left" ngbTooltip="Tooltip on left">
-  Tooltip on left
-</button>');
+//         	$(element).html("<button type="button" class="btn btn-outline-secondary mr-2" placement="left" ngbTooltip="Tooltip on left">
+//   Tooltip on left
+// </button>");
       	},
       	eventClick: function(calEvent, jsEvent, view) {
 

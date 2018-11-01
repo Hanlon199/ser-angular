@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FormsModule, ReactiveFormsModule, NgForm  } from '@angular/forms';
 import {Comment} from '../comment.model';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
@@ -17,20 +18,29 @@ export class CommunityComponent implements OnInit {
   closeResult: string;
 
   constructor(private modalService: NgbModal) { 
+
       this.userMessage = {};
+      this.userMessage.username = 'UserLoggedInName';
       this.comment_Array = [
-       new Comment('Bobby Barkly', 'WOW WOW WOW', '10/12/2018'),
-       new Comment('Ryan Hanlon', 'Hey have you had the new coco puff cereal lately?', '10/21/2018')
+      new Comment('Bobby Barkly', 'WOW WOW WOW', '10/12/2018'),
+      new Comment('Ryan Hanlon', 'Hey have you had the new coco puff cereal lately?', '10/21/2018')
       ];
     }
 
   ngOnInit() {}
 
-  newMessage(){
-    console.log("USERMESSAGE" , this.userMessage)
+  newMessage(form:NgForm){
+    let formControls = form.controls;
+    console.log(formControls)
+    if (formControls) {
+      // code...
+    }
+
     this.date = this.dateToString(this.userMessage.date)
   	this.comment_Array.push(new Comment(this.userMessage.username, this.userMessage.message, this.userMessage.date))
     this.userMessage = {};
+    this.userMessage.username = 'UserLoggedInName';
+
   }
 
   open(content) {
