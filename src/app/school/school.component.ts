@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, NgForm  } from '@angular/forms';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @Component({
   selector: 'app-school',
   templateUrl: './school.component.html',
@@ -32,3 +34,17 @@ export class ContactComponent implements OnInit {
   }
 
 }
+
+// import { Injectable } from '@angular/core';
+// import { HttpClient } from '@angular/common/http';
+
+// @Injectable()
+// export class ConfigService {
+//   constructor(private http: HttpClient) { }
+//   configUrl = 'assets/config.json';
+
+//   getConfig() {
+//     return this.http.get(this.configUrl);
+//   }
+// }
+
