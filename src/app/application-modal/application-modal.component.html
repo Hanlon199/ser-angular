@@ -1,0 +1,39 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title"><img height="50" width="50" src="src/includes/img/logo_small.jpg"> Apply to U.A. Academia</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form name="applicationForm">
+    <div class="row">
+      <div class="form-group" style="margin:auto !important;">
+		<label for="firstname">First name</label>
+		<div>
+			<input class="form-control col-md-10" type="text" name="firstname" [(ngModel)]="firstname" (ngModelChange)="verifyForm()" required>
+		</div>
+		<label for="firstname">Last name</label>
+		<div>
+			<input class="form-control col-md-10" type="text" name="lastname" [(ngModel)]="lastname" (ngModelChange)="verifyForm()" required>
+		</div>
+        <label for="dateOfBirth">Date of birth</label>
+        <div class="input-group">
+          <input id="dateOfBirth" class="form-control col-md-10" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker" [(ngModel)]="dob" (ngModelChange)="verifyForm()" required>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"><i class="fas fa-calendar-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+  <div class="alert alert-warning" [hidden]="complete">
+  	Complete the form before submitting
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn alert-primary" [hidden]="!complete" (click)="modal.close('Save click')">Apply</button>
+  </div>
+</ng-template>
+
+<a style="color: black;" class="btn hover alert alert-info" (click)="open(content)">Apply Now</a>

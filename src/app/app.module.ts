@@ -27,6 +27,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Calendar } from './school-calendar/school-calendar.component';
 import { NgbdDatepickerComponent } from './ngbd-datepicker/ngbd-datepicker.component';
 import { FooterComponent } from './footer/footer.component';
+import { ApplicationModalComponent } from './application-modal/application-modal.component';
 //constant to house all routes
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -65,7 +66,8 @@ const appRoutes: Routes = [
     NgbdModalComponent,
     NgbdDatepickerComponent,
     Calendar,
-    FooterComponent
+    FooterComponent,
+    ApplicationModalComponent
   ],
   imports: [
     BrowserModule,
